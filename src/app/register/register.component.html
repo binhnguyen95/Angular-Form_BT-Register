@@ -60,6 +60,9 @@
     <div [hidden]="!phone?.errors?.['required']">
       <p style="color: red"> Phone must not be empty </p>
     </div>
+    <div [hidden]="!phone?.errors?.['pattern']">
+      <p style="color: red"> Sai dinh dang </p>
+    </div>
   </div>
 
   <p>
